@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Виселица!</title>
+</head>
+<body>
+ <h1>Виселица!</h1>
+ <script>
+   function words(arg1,arg2) {
+     if(arg1===1) {
+         return ["FfgGhH","hHFfgG","FhfHgG"];
+     }
+     else if(arg1===2) {
+         return ["ЛалАфа","уЛЯля","ПуРУру"];
+     }
+     else if(arg1===3) {
+        return 111;
+     }
+     else if (arg1===0) {
+        return arg2
+     }
+   }
+   function random(array) {
+    return array[Math.floor(Math.random()*array.length)];
+  }
+  function Now(asnwerArray) {
+    if (guess.length ==1) return alert(answerArray.join(" ")+" осталось "+(word.length-XXX)+" попыток");
+  }
+  function quest() {
+    return prompt("Угадай букву или уходи. Попыток ровно "+(word.length-XXX));
+  }
+  function updateGameState(guess,word,answerArray) {
+    for (var j=0; j<word.length; j++) {if (word[j].toLowerCase()===guess.toLowerCase() && answerArray[j]==="_") {
+        answerArray[j]=word[j];
+        remainingLatters--;
+    }}}
+  var guess1=prompt("Загадай число от 1 до 2");
+  var x=parseInt(guess1);
+  var word=random(words(x));
+  var answerArray=[];
+  for (var i=0; i<word.length; i++) {answerArray[i]="_";}
+    var remainingLatters=word.length;
+    var XXX=0;
+    while(remainingLatters>0 && XXX<word.length) {
+        var guess=quest();
+        XXX++;
+        if (guess===null) {alert("Не играешь?! Было загадано слово " + word); break;}
+        else if (guess.length !==1) {alert("Хватит тупить, осталось "+(word.length-XXX)+" попыток");}
+        else {updateGameState(guess,word,answerArray);}
+          Now();
+    }
+if (remainingLatters===0) {alert("Хорошо, было загадано слово " + word);}
+else {if (guess!==null) {alert("Глупец, было загадано слово " + word);}}
+</script>
+</body>
+</html>
