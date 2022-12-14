@@ -51,7 +51,7 @@
           Now();
     }
 if (remainingLatters===0) {alert("Хорошо, было загадано слово " + word);}
-else {if (guess!==null) {alert("Глупец, было загадано слово " + word);}}
+else {if (guess!==null) {alert("Глупец, было загадано слово " + word + "!");}}
 </script>
 </body>
 </html>
