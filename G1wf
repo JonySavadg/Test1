@@ -46,7 +46,7 @@
         var guess=quest();
         XXX++;
         if (guess===null) {alert("Не играешь?! Было загадано слово " + word); break;}
-        else if (guess.length !==1) {alert("Хватит тупить, осталось "+(word.length-XXX)+" тест гита 100500 с гит пул");}
+        else if (guess.length !==1) {alert("Хватит тупить, осталось "+(word.length-XXX)+" тест гита 100500 с гит пул без мерджинга");}
         else {updateGameState(guess,word,answerArray);}
           Now();
     }
